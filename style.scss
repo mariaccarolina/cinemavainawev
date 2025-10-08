@@ -4,32 +4,97 @@
 comentario de varias linhas
 */
 
-// * é o seletor global
-*{
+// * é o seletor global(tudas as tags)
+
+* {
     margin: 0;
-    // espaçamento externo das tags
     padding: 0;
-    // espaçamento interno das tags
     box-sizing: border-box;
-    // Faz o calculo correto dos tamanhos dos elementos
 }
 
-// seletor{propriedade:valor;}
-// tag - seletor
-img{
-    width: 150px;
+body {
+    // font-family - define a fonte que será usada no texto
+    font-family: "Montserrat", sans-serif;
 }
 
-// .class - seletor
-.titulo{
-    color: red;
+// cores - nome da cor (ingles), rgb e hexadecimal
+
+// rgb()
+// os valores do rgb vão de 0 a 255
+
+// hexadecimal - Um sistema de numeração seguido do #
+header {
+    background-color: #5f0f40;
+    text-align: center;
+
+    ul{
+        display: flex;
+        // ativa o flexbox e alinha os itens um ao lado outro
+        list-style: none; // retira o estilo da lista
+        //border:  solid;
+        // propriedade que ajusta no eixo horizontal(eixo da largura)
+        // justify-content: center; //alinhar ao centro
+        justify-content: space-around;//espaçamento ao redor do item
+        //justify-content: space-between;//espaçamento entre os itens
+        padding: 20px;
+    }
+    // aninhamento 
+    h1 {
+        color: #f8f9fa;
+        font-family: "Gravitas One", serif;
+        font-size: 3rem;
+        // font-size - tamanho da fonte
+    }
 }
 
-// #id - seletor
-#btn1{
+a {
+    text-decoration: none;
+    // retirei o sublinhado da tag a
+    color: aliceblue;
+    padding: 5px;
+}
+
+main {
+    background-color: #f8f9fa;
+
+    .banner{
+       background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg");
+       height: 40vh;
+    //    define o tamanho da imagem de fundo
+        background-size: cover;
+        // controla a posição da imagem que será exibida
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+// px (fixo) Não muda
+
+// class  é um seletor que podemos repetir/reutilizar
+.card {
+
+    img {
+        width: 20vw;
+    }
+
+    // aninhamento
+    h2 {
+        font-weight: 400;
+    }
+}
+
+// medida relativa
+// vw - viewport (janela de exibição)
+// vw - largura da tela 
+
+
+// porcentagem % - relativo ao elemento pai
+
+// identificador unico/ n podemos repetir
+#btn1 {
     background-color: purple;
 }
 
-body{
-    background-color: green;
+#btn2 {
+    background-color: burlywood;
 }

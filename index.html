@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 class="titulo">Cinema VNW</h1>
-    </header>
-    <main>
-        <!-- main => conteudo principal da pagina -->
-         <!-- card -->
-          <div>
-            <!-- div -> dividir -->
-             <img src="https://m.media-amazon.com/images/M/MV5BYjUzZTQxOTYtOTM2ZC00MmJhLTk4NzAtNmFhOGZhMjMxOWNkXkEyXkFqcGc@._V1_.jpg" alt="Imagem do filme Invocação do mal 4">
-             <h2>Invocação do Mal 4</h2>
-             <button id="btn1">Compre seu Ingresso</button>
-          </div>
+  <header>
+    <!-- ul é container da lista nao ordenada -->
+    <ul>
+      <!-- ul é a tag container/tag pai -->
+      <!-- li - item da lista -->
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Filmes</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <h1 class="titulo">Cinema VNW</h1>
+  </header>
+  <main>
+    <!-- main => conteudo principal da pagina -->
+     <!-- section divide seções -->
+     <section class="banner"></section>
+    <!-- card -->
 
-          <div>
-            <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="Filme do It a Coisa">
-            <h2>It - A Coisa</h2>
-            <button>Compre seu Ingresso</button>
-          </div>
+    <!-- Usamos a div para dividir/ não tem um valor semantico -->
+    <div class="card">
+      <!-- div -> dividir -->
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BYjUzZTQxOTYtOTM2ZC00MmJhLTk4NzAtNmFhOGZhMjMxOWNkXkEyXkFqcGc@._V1_.jpg"
+        alt="Imagem do filme Invocação do mal 4">
+      <h2>Invocação do Mal 4</h2>
+      <button id="btn1">Compre seu Ingresso</button>
+    </div>
 
-          <div>
-            <img src="https://br.web.img2.acsta.net/pictures/23/06/19/19/20/4152271.jpg" alt="Filme Agente Stone">
-            <h2>Agente Stone</h2>
-            <button>Compre seu Ingresso</button>
-          </div>
-    </main>
+    <div class="card">
+      <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="Filme do It a Coisa">
+      <h2>It - A Coisa</h2>
+      <button id="btn2">Compre seu Ingresso</button>
+    </div>
+
+    <div class="card">
+      <img src="https://br.web.img2.acsta.net/pictures/23/06/19/19/20/4152271.jpg" alt="Filme Agente Stone">
+      <h2>Agente Stone</h2>
+      <button class="btn3">Compre seu Ingresso</button>
+    </div>
+  </main>
 </body>
+
 </html>

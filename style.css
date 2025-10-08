@@ -7,14 +7,54 @@ comentario de varias linhas
   box-sizing: border-box;
 }
 
-img {
-  width: 150px;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.titulo {
-  color: red;
+header {
+  background-color: #5f0f40;
+  text-align: center;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 20px;
+}
+header h1 {
+  color: #f8f9fa;
+  font-family: "Gravitas One", serif;
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px;
+}
+
+main {
+  background-color: #f8f9fa;
+}
+main .banner {
+  background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card img {
+  width: 20vw;
+}
+.card h2 {
+  font-weight: 400;
 }
 
 #btn1 {
   background-color: purple;
+}
+
+#btn2 {
+  background-color: burlywood;
 }/*# sourceMappingURL=style.css.map */
