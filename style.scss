@@ -3,7 +3,6 @@
 /*
 comentario de varias linhas
 */
-
 // * é o seletor global(tudas as tags)
 
 * {
@@ -18,26 +17,26 @@ body {
 }
 
 // cores - nome da cor (ingles), rgb e hexadecimal
-
 // rgb()
-// os valores do rgb vão de 0 a 255
-
+// os valores do rgb vão de 0 a 25
 // hexadecimal - Um sistema de numeração seguido do #
+
 header {
     background-color: #5f0f40;
     text-align: center;
 
-    ul{
+    ul {
         display: flex;
         // ativa o flexbox e alinha os itens um ao lado outro
         list-style: none; // retira o estilo da lista
         //border:  solid;
         // propriedade que ajusta no eixo horizontal(eixo da largura)
         // justify-content: center; //alinhar ao centro
-        justify-content: space-around;//espaçamento ao redor do item
+        justify-content: space-around; //espaçamento ao redor do item
         //justify-content: space-between;//espaçamento entre os itens
         padding: 20px;
     }
+
     // aninhamento 
     h1 {
         color: #f8f9fa;
@@ -57,10 +56,10 @@ a {
 main {
     background-color: #f8f9fa;
 
-    .banner{
-       background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg");
-       height: 40vh;
-    //    define o tamanho da imagem de fundo
+    .banner {
+        background-image: url("https://img.freepik.com/vetores-gratis/cartaz-de-tempo-de-filme-de-cinema-horizontal-realista-com-carretel-de-badalo-de-bilhetes-de-lanches-de-oculos-3d-em-fundo-azul-com-ilustracao-vetorial-bokeh_1284-77013.jpg");
+        height: 40vh;
+        //    define o tamanho da imagem de fundo
         background-size: cover;
         // controla a posição da imagem que será exibida
         background-position: center;
@@ -68,33 +67,56 @@ main {
     }
 }
 
-// px (fixo) Não muda
+#filmes {
+    // display-> block, inline e inline-block
+    display: flex;
+    // ativa o flexbox, coloca os itens/filhos um ao lado do outro
+    // propriedade que ajusta no eixo da largura:
+     justify-content: center;
+    // justify-content: space-between;//espaço entre os itens
+    // justify-content: space-evenly;//espaço calculado de forma igual
+    // justify-content: space-around; //espaço ao redor
+     gap: 100px;// gap é uma propriedade usada para criar espaçamentos entre os elementos
 
-// class  é um seletor que podemos repetir/reutilizar
+    // Para trabalharmos o eixo da altura
+    align-items: center;
+    flex-wrap: wrap; //os itens vao ficar em linha, mas podem "quebrar" para a proxima linha
+    padding: 50px 130px;
+}
+
+
 .card {
 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
     img {
-        width: 20vw;
+        max-width: 300px;// tamanho maximo da imagem
+        width: 30vw;
+        height: 45vh;
+        border-radius: 20px;
     }
 
     // aninhamento
     h2 {
         font-weight: 400;
+        padding: 10px;
     }
 }
 
 // medida relativa
 // vw - viewport (janela de exibição)
 // vw - largura da tela 
-
-
 // porcentagem % - relativo ao elemento pai
-
 // identificador unico/ n podemos repetir
-#btn1 {
-    background-color: purple;
-}
 
-#btn2 {
-    background-color: burlywood;
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: #5f0f40;
+    color: #f8f9fa;
+    border-radius: 10px;
 }

@@ -44,17 +44,36 @@ main .banner {
   background-repeat: no-repeat;
 }
 
+#filmes {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 130px;
+}
+
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
 .card img {
-  width: 20vw;
+  max-width: 300px;
+  width: 30vw;
+  height: 45vh;
+  border-radius: 20px;
 }
 .card h2 {
   font-weight: 400;
+  padding: 10px;
 }
 
-#btn1 {
-  background-color: purple;
-}
-
-#btn2 {
-  background-color: burlywood;
+button {
+  padding: 10px;
+  border: none;
+  background-color: #5f0f40;
+  color: #f8f9fa;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
